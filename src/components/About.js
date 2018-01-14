@@ -22,7 +22,7 @@ class About extends Component {
                 {"In my down time, I love powerlifting, performing stand-up comedy, and hunting down the best burritos in town."}
               </div>
               <div className="col s4 headshot">
-                <img src="https://image.ibb.co/fOc3X6/Headshot.jpg" className="circle z-depth-5"/>
+                <img src="https://image.ibb.co/fOc3X6/Headshot.jpg" className="circle photo z-depth-5"/>
               </div>
             </div>
       </div>

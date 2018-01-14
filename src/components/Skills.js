@@ -18,8 +18,8 @@ class Skills extends Component {
               <div className="col s6 skillsText frontend">
                 <div className="frontEndTitle">Front-End</div>
                   <div className="skillDiv">{"React"}</div>
+                  <div className="skillDiv">{"Redux"}</div>
                   <div className="skillDiv">{"Javascript"}</div>
-                  <div className="skillDiv">{"HTML"}</div>
                   <div className="skillDiv">{"CSS"}</div>
               </div>
               <div className="col s6 skillsText backend">

@@ -7,7 +7,6 @@ import Pic3 from '../images/small-victory-3.jpg'
 
 class Projects extends Component {
   render() {
-    console.log(Pic1)
     return (
       <div className="">
             <div className="aboutHeader">
@@ -40,7 +39,7 @@ class Projects extends Component {
                         <li>{"Express"}</li>
                         <li>{"MongoDB"}</li>
                         <li>{"React"}</li>
-                        <li>{"CSS"}</li>
+                        <li>{"Redux"}</li>
                       </ul>
                     </div>
                   </Modal>
@@ -60,7 +59,24 @@ class Projects extends Component {
               </div>
               <div className="col s6 projectsText">
                 <div className="projectsTitle">freecodecamp</div>
-
+                  <ul className="freecodecamp">
+                    <li>
+                      Pollr <br/>
+                      <span className="fccTechnology">{"React, Redux, Node, Express, MongoDB"}</span>
+                    </li>
+                    <li>
+                      Camper Leaderboard <br/>
+                      <span className="fccTechnology">{"React, Redux"}</span>
+                    </li>
+                    <li>
+                      Recipe Box <br/>
+                      <span className="fccTechnology">{"React, Redux"}</span>
+                    </li>
+                    <li>
+                    Markdown Previewer <br/>
+                    <span className="fccTechnology">{"React"}</span>
+                    </li>
+                  </ul>
               </div>
             </div>
       </div>

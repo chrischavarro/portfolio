@@ -12,6 +12,22 @@ nav {
   margin-top: 30px!important;
 }
 
+.contactButtons {
+  padding-top: 10px;
+  transition: all .3s;
+}
+
+.contactButtons img:hover {
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+  /* box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3); */
+  transition: all .3s;
+}
+
+.circle.contact {
+  border: 0px!important;
+  /* margin-left: 0px!important; */
+}
+
 .brand-logo {
   font-size: 36px!important;
   font-weight: 200;
@@ -37,6 +53,7 @@ nav {
 .titleDiv {
   padding-left: 10%;
   text-transform: lowercase;
+  /* padding-right: 30px; */
 }
 
 .homeName {
@@ -47,7 +64,7 @@ nav {
 }
 
 .homeTitle {
-  text-align: right;
+  /* text-align: right; */
   font-size: 30pt;
   font-weight: 100;
   padding-left: 7px;
@@ -62,26 +79,30 @@ nav {
   line-height: 90px;
 }
 
+.navLink {
+  transition: all .3s
+}
+
 .navLink:hover {
   background-color: #1a191e;
   border-style: solid;
   border-width: 0px 0px 10px 0px;
-  transition: all .2s
+  transition: all .3s
 }
 
 .homeLink {
   padding-left: 15px;
   padding-right: 50px;
   text-decoration: none;
+  transition: all .3s
 }
 
   .homeLink:hover {
     background-color: #1a191e;
     border-style: solid;
     border-width: 0px 10px 0px 0px;
-    transition: all .2s
+    transition: all .3s
   }
-
 
   .about:hover {
     border-color: #d500ff;
@@ -113,8 +134,8 @@ nav {
     border-color: #d500ff;
   }
 
-  .navLink.education:hover {
-    border-color: #026eff;
+  .navLink.about:hover {
+    border-color: #d500ff;
     color: white!important;
   }
 
@@ -154,6 +175,10 @@ nav {
   padding-bottom: 20px;
 }
 
+.aboutHeaderHover {
+  transition: all .5s;
+}
+
 .aboutHeaderHover:hover {
   color: #d500ff;
   opacity: 1;
@@ -165,7 +190,7 @@ nav {
   margin-top: 10%;
 }
 
-.circle {
+.circle.photo {
   border: 5px solid #c1cad6;
   width: 400px;
   margin-left: 80px;
@@ -244,6 +269,10 @@ nav {
 }
 
 /* PROJECTS PAGE STYLING */
+.projectsHeader {
+  transition: all .5s;
+}
+
 .projectsHeader:hover {
   color: #08ff02;
   opacity: 1;
@@ -255,21 +284,16 @@ nav {
   font-weight: 500;
   font-size: 80px;
   text-transform: lowercase;
-  /* padding-bottom: 15px!important; */
 }
 
 .projectsText {
-  /* text-align: center; */
   font-size: 24pt;
   font-weight: 100;
-  /* line-height: 100px; */
-  /* margin-top: 2%; */
   padding-left: 100px!important;
   padding-right: 100px!important;
 }
 
 .projectModalTrigger {
-  /* background-color: #1a191e; */
   text-align: center;
   font-weight: 600;
   padding: 10px 0px 10px 0px!important;
@@ -284,13 +308,10 @@ nav {
 
 .projectModal {
   box-shadow: 0px 8px 23px 5px rgba(88, 105, 107, 0.35);
-  /* font-size: 36px!important; */
-  /* color: #ffffff; */
   padding-top: 15px!important;
   padding-bottom: 15px!important;
   box-shadow: 0px 8px 23px 5px rgba(88, 105, 107, 0.35);
   margin-bottom: 30px;
-  /* width: 20%!important; */
 }
 
 .projectModalText ul {
@@ -328,6 +349,69 @@ nav {
 .modal-footer {
   background-color: #1a191e!important;
 }
+
+.freecodecamp {
+  font-size: 46px;
+  font-weight: 400;
+}
+
+.fccTechnology {
+  font-size: 32px;
+  font-weight: 100;
+}
+
+/*  CONTACT PAGE STYLING */
+
+.contactHeader {
+  transition: all .5s;
+}
+
+.contactHeader:hover {
+  color: #fcff02;
+  opacity: 1;
+  transition: all .5s;
+  cursor: default;
+}
+
+.contactTitle {
+  font-weight: 500;
+  font-size: 80px;
+  text-transform: lowercase;
+}
+
+.contactText {
+  font-size: 65px;
+  font-weight: 100!important;
+  padding-left: 100px!important;
+  margin-top: 4%;
+  /* padding-right: 100px!important; */
+}
+
+.contactLink {
+  transition: all .3s;
+  font-weight: 400;
+}
+
+.contactLink:hover {
+  transition: all .3s;
+}
+
+.contactLink.linkedin:hover {
+  color: #1083bf!important;
+}
+
+.contactLink.github:hover {
+  color: #000!important;
+}
+
+.contactLink.resume:hover {
+  color: #d500ff!important;
+}
+
+.contactLink.email:hover {
+  color: #fcff02!important;
+}
+
 
 @media (max-width: 1450px) {
   .homeLinks {
