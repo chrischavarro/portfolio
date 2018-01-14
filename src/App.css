@@ -19,6 +19,18 @@ nav {
   margin-left: 30px;
 }
 
+.navLinksTest {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navLinksTest li {
+  float: left;
+  padding: 0px 15px 0px 15px;
+}
+
 .navLinks {
   margin-right: 30px;
 }
@@ -38,11 +50,8 @@ nav {
 
 .homeTitle {
   text-align: right;
-  /* font-family: 'Lato'; */
   font-size: 30pt;
-  /* margin-top: 20px; */
   font-weight: 100;
-  /* margin-right: -10%; */
   padding-left: 7px;
 }
 
@@ -51,11 +60,15 @@ nav {
   text-transform: lowercase;
   text-align: left;
   font-size: 50pt;
-  /* font-family: 'Lato'; */
   font-weight: 100;
   line-height: 90px;
-  /* margin-top: 10%; */
-  /* padding-right: 10%; */
+}
+
+.navLink:hover {
+  background-color: #1a191e;
+  border-style: solid;
+  border-width: 0px 0px 10px 0px;
+  transition: all .2s
 }
 
 .homeLink {
@@ -64,38 +77,37 @@ nav {
   text-decoration: none;
 }
 
-.homeLink:hover {
-  background-color: #1a191e;
-  border-style: solid;
-  border-width: 0px 10px 0px 0px;
-  transition: all .2s
-  /* border: 1px solid white; */
-}
+  .homeLink:hover {
+    background-color: #1a191e;
+    border-style: solid;
+    border-width: 0px 10px 0px 0px;
+    transition: all .2s
+  }
 
-.about:hover {
-  border-color: #d500ff;
-  color: #d500ff!important;
-}
+  .about:hover, .home:hover {
+    border-color: #d500ff;
+    color: #d500ff;
+  }
 
-.education:hover {
-  border-color: #026eff;
-  color: #026eff;
-}
+  .education:hover {
+    border-color: #026eff;
+    color: #026eff;
+  }
 
-.skills:hover {
-  border-color: #ff9f00;
-  color: #ff9f00;
-}
+  .skills:hover {
+    border-color: #ff9f00;
+    color: #ff9f00;
+  }
 
-.portfolio:hover {
-  border-color: #08ff02;
-  color: #08ff02;
-}
+  .projects:hover {
+    border-color: #08ff02;
+    color: #08ff02;
+  }
 
-.contact:hover {
-  color: #fcff02;
-  border-color: #fcff02;
-}
+  .contact:hover {
+    color: #fcff02;
+    border-color: #fcff02;
+  }
 
 .material-icons {
   font-size: 30px;
@@ -108,29 +120,40 @@ nav {
 }
 
 /* ABOUT PAGE STYLING */
-
 .aboutHeader {
   text-transform: uppercase;
-  font-size: 60pt;
+  font-size: 97pt;
   line-height: 90px;
-  /* padding-top: 5%; */
-  /* font-family: 'Lato'; */
-  font-weight: 400;
+  font-weight: 600;
+  opacity: 0.5;
+  padding-bottom: 20px;
 }
 
 .headshot {
-  /* style={{ marginLeft: '35%', paddingTop: '5%' } */
-  margin-left: 35%;
-  padding-top: 5%;
+  margin-top: 10%;
+}
+
+.circle {
+  /* border: 5px solid black; */
 }
 
 .aboutText {
   text-align: left;
   font-size: 32pt;
   font-weight: 100;
-  line-height: 50px;
-  margin-left: 17%;
-  margin-right: 17%;
+  line-height: 60px;
+  margin-top: 2%;
+  padding-left: 50px!important;
+  /* margin-top at 5 and line-height at 50px were original settings */
+}
+
+.littleText {
+  font-weight: 500;
+}
+
+.littleText:hover {
+  color: #fcff02!important;
+  transition: all .5s;
 }
 
 @media (max-width: 1450px) {

@@ -6,10 +6,10 @@ class Header extends Component {
     // Replace full name on header with CC, possibly once visitor starts scrolling
     // Only show when visitor starts scrolling
     // z-depth-4
+    // <span className="brand-logo">Christian Chavarro</span>
     return (
       <nav style={{}}>
         <div className="nav-wrapper headerDiv">
-            <span className="brand-logo">Christian Chavarro</span>
               <ul className="right navLinks settingsLink">
                 <li><a href="#">About Me</a></li>
                 <li><a href="#">Education</a></li>
