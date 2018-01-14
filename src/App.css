@@ -1,0 +1,144 @@
+body, .nav-wrapper {
+  /* Light grey */
+  background-color: #212226!important;
+  color: white!important;
+  font-family: 'Lato'!important;
+}
+
+nav {
+  -webkit-box-shadow: none!important;
+  -moz-box-shadow: none!important;
+  box-shadow: none!important;
+  /* margin-bottom: 50px; */
+  margin-top: 30px!important;
+}
+
+.brand-logo {
+  font-size: 36px!important;
+  font-weight: 200;
+  margin-left: 30px;
+}
+
+.navLinks {
+  margin-right: 30px;
+}
+
+.titleDiv {
+  /* padding-top: 40%; */
+  padding-left: 10%;
+  text-transform: lowercase;
+}
+
+.homeName {
+  line-height: 66px;
+  font-size: 80pt;
+  font-family: 'Lato';
+  font-weight: 400;
+}
+
+.homeTitle {
+  text-align: right;
+  /* font-family: 'Lato'; */
+  font-size: 30pt;
+  /* margin-top: 20px; */
+  font-weight: 100;
+  /* margin-right: -10%; */
+  padding-left: 7px;
+}
+
+.homeLinks {
+  color: white;
+  text-transform: lowercase;
+  text-align: left;
+  font-size: 50pt;
+  /* font-family: 'Lato'; */
+  font-weight: 100;
+  line-height: 90px;
+  /* margin-top: 10%; */
+  /* padding-right: 10%; */
+}
+
+.homeLink {
+  padding-left: 15px;
+  padding-right: 50px;
+  text-decoration: none;
+}
+
+.homeLink:hover {
+  background-color: #1a191e;
+  border-style: solid;
+  border-width: 0px 10px 0px 0px;
+  transition: all .2s
+  /* border: 1px solid white; */
+}
+
+.about:hover {
+  border-color: #d500ff;
+  color: #d500ff!important;
+}
+
+.education:hover {
+  border-color: #026eff;
+  color: #026eff;
+}
+
+.skills:hover {
+  border-color: #ff9f00;
+  color: #ff9f00;
+}
+
+.portfolio:hover {
+  border-color: #08ff02;
+  color: #08ff02;
+}
+
+.contact:hover {
+  color: #fcff02;
+  border-color: #fcff02;
+}
+
+.material-icons {
+  font-size: 30px;
+  vertical-align: middle;
+  padding-right: 30px;
+}
+
+.switch-wrapper {
+  position: relative;
+}
+
+/* ABOUT PAGE STYLING */
+
+.aboutHeader {
+  text-transform: uppercase;
+  font-size: 60pt;
+  line-height: 90px;
+  /* padding-top: 5%; */
+  /* font-family: 'Lato'; */
+  font-weight: 400;
+}
+
+.headshot {
+  /* style={{ marginLeft: '35%', paddingTop: '5%' } */
+  margin-left: 35%;
+  padding-top: 5%;
+}
+
+.aboutText {
+  text-align: left;
+  font-size: 32pt;
+  font-weight: 100;
+  line-height: 50px;
+  margin-left: 17%;
+  margin-right: 17%;
+}
+
+@media (max-width: 1450px) {
+  .homeLinks {
+    font-size: 30pt!important;
+  }
+
+  .homeLink {
+    padding-right: 40px!important;
+  }
+}
