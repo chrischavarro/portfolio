@@ -154,6 +154,13 @@ nav {
   padding-bottom: 20px;
 }
 
+.aboutHeaderHover:hover {
+  color: #d500ff;
+  opacity: 1;
+  transition: all .5s;
+  cursor: default;
+}
+
 .headshot {
   margin-top: 10%;
 }
@@ -201,14 +208,7 @@ nav {
   cursor: default;
 }
 
-.frontEndTitle {
-  font-weight: 500;
-  font-size: 80px;
-  text-transform: lowercase;
-  padding-bottom: 15px!important;
-}
-
-.backEndTitle {
+.frontEndTitle, .backEndTitle {
   font-weight: 500;
   font-size: 80px;
   text-transform: lowercase;
@@ -241,6 +241,45 @@ nav {
   background-position: left bottom;
   /* background-color: #1a191e; */
   transition: all .7s ease;
+}
+
+/* PROJECTS PAGE STYLING */
+.projectsHeader:hover {
+  color: #08ff02;
+  opacity: 1;
+  transition: all .5s;
+  cursor: default;
+}
+
+.projectsTitle {
+  font-weight: 500;
+  font-size: 80px;
+  text-transform: lowercase;
+  /* padding-bottom: 15px!important; */
+}
+
+.projectsText {
+  /* text-align: center; */
+  font-size: 24pt;
+  font-weight: 100;
+  /* line-height: 100px; */
+  /* margin-top: 2%; */
+  padding-left: 100px!important;
+  padding-right: 100px!important;
+}
+
+.projectModalTrigger {
+  /* background-color: #1a191e; */
+  text-align: center;
+  font-weight: 600;
+  padding: 10px 0px 10px 0px!important;
+  transition: all .3s;
+}
+
+.projectModalTrigger:hover {
+  background-color: #04b100;
+  cursor: pointer;
+  transition: all .3s;
 }
 
 @media (max-width: 1450px) {
