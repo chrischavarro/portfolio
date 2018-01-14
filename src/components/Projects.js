@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
-import Header from './Header';
 import { Link } from 'react-router-dom'
 import { Carousel, Modal } from 'react-materialize'
+import Pic1 from '../images/small-victory-1.jpg'
+import Pic2 from '../images/small-victory-2.jpg'
+import Pic3 from '../images/small-victory-3.jpg'
 
 class Projects extends Component {
   render() {
+    console.log(Pic1)
     return (
       <div className="">
             <div className="aboutHeader">
@@ -20,35 +23,43 @@ class Projects extends Component {
               <div className="col s6 projectsText">
                 <div className="projectsTitle">small victory</div>
                   <Carousel options={{ fullWidth: true }} images={[
-                    'https://lorempixel.com/800/400/food/1',
-                    'https://lorempixel.com/800/400/food/2',
-                    'https://lorempixel.com/800/400/food/3',
-                    'https://lorempixel.com/800/400/food/4',
-                    'https://lorempixel.com/800/400/food/5'
+                    `${Pic1}`,
+                    `${Pic2}`,
+                    `${Pic3}`
                   ]} />
                   <div style={{ fontWeight: 600 }}>{"Do one 5 minute task that makes you better"}</div>
-                  <div>{"Web app that presents users with a daily five-minute task to help improve themselves according to their selected track, which is suggested based on their interests."}</div>
+                  <div style={{ marginBottom: '5px' }}>{"Web app that presents users with a daily five-minute task to help improve themselves according to their selected track, which is suggested based on their interests."}</div>
                   <Modal
                     header='Technologies Used'
-                    className="dashboardSummary"
-                    style={{ backgroundColor: 'rgb(60, 120, 216)', color: 'white', textAlign: 'center'}}
+                    className="projectModal"
+                    style={{ backgroundColor: '#1a191e', color: 'white', textAlign: 'center', width: '25%'}}
                     trigger={<div className="col s6 projectModalTrigger">Technologies</div>}>
-                    <div className="col s6 offset-s3">
-                      {"Node, Express, MongoDB, React, HTML, CSS, Javascript"}
+                    <div className="projectModalText technologies">
+                      <ul>
+                        <li>{"Node"}</li>
+                        <li>{"Express"}</li>
+                        <li>{"MongoDB"}</li>
+                        <li>{"React"}</li>
+                        <li>{"CSS"}</li>
+                      </ul>
                     </div>
                   </Modal>
                   <Modal
-                    header='Awards Won'
-                    className="dashboardSummary"
-                    style={{ backgroundColor: 'rgb(60, 120, 216)', color: 'white', textAlign: 'center'}}
+                    header='Ironhack Hack Show Awards'
+                    className="projectModal"
+                    style={{ backgroundColor: '#1a191e', color: 'white', textAlign: 'center', width: '25%'}}
                     trigger={<div className="col s6 projectModalTrigger">Awards</div>}>
-                    <div className="col s6 offset-s3">
-                      {"Most Innovative Idea, Best User Experience, 1st Place"}
+                    <div className="projectModalText awards">
+                      <ul>
+                        <li>{"Most Innovative Idea"}</li>
+                        <li>{"Best User Experience"}</li>
+                        <li>{"1st Place Overall"}</li>
+                      </ul>
                     </div>
                   </Modal>
               </div>
               <div className="col s6 projectsText">
-                <div className="projectsTitle">freecodecamp projects</div>
+                <div className="projectsTitle">freecodecamp</div>
 
               </div>
             </div>

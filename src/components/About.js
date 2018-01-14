@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import Header from './Header';
 import { Link } from 'react-router-dom'
 
-// <Header/>
 class About extends Component {
   render() {
     return (

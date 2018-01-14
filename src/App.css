@@ -282,6 +282,53 @@ nav {
   transition: all .3s;
 }
 
+.projectModal {
+  box-shadow: 0px 8px 23px 5px rgba(88, 105, 107, 0.35);
+  /* font-size: 36px!important; */
+  /* color: #ffffff; */
+  padding-top: 15px!important;
+  padding-bottom: 15px!important;
+  box-shadow: 0px 8px 23px 5px rgba(88, 105, 107, 0.35);
+  margin-bottom: 30px;
+  /* width: 20%!important; */
+}
+
+.projectModalText ul {
+  font-size: 36px;
+  text-align: center;
+  padding: 10px 0px 0px 0px!important;
+  margin: 0px 0px 0px 0px!important;
+}
+
+.projectModalText li {
+  padding: 10px 0px 10px 0px!important;
+  margin: 0px 0px 5px 0px!important;
+  background-color: #057802!important;
+  transition: all .3s
+}
+
+.awards li:hover, .technologies li:hover {
+  background-color: #055a03!important;
+  transition: all .3s;
+  cursor: default;
+}
+
+.modal-content h4 {
+  font-size: 46px!important;
+  font-weight: 200!important;
+}
+
+.modal-footer button {
+  float: none!important;
+  font-size: 25px;
+  margin-bottom: 5px;
+  margin-top: 0px!important;
+}
+
+.modal-footer {
+  background-color: #1a191e!important;
+}
+
 @media (max-width: 1450px) {
   .homeLinks {
     font-size: 30pt!important;
