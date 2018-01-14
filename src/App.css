@@ -11,381 +11,381 @@ nav {
   box-shadow: none!important;
   margin-top: 30px!important;
 }
+/* GLOBAL STYLING */
 
-.contactButtons {
-  padding-top: 10px;
-  transition: all .3s;
-}
-
-.contactButtons img:hover {
-  box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
-  /* box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3); */
-  transition: all .3s;
-}
-
-.circle.contact {
-  border: 0px!important;
-  /* margin-left: 0px!important; */
-}
-
-.brand-logo {
-  font-size: 36px!important;
-  font-weight: 200;
-  margin-left: 30px;
-}
-
-.navLinksTest {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.navLinksTest li {
-  float: left;
-  padding: 0px 15px 0px 15px;
-}
-
-.navLinks {
-  margin-right: 30px;
-}
-
-.titleDiv {
-  padding-left: 10%;
-  text-transform: lowercase;
-  /* padding-right: 30px; */
-}
-
-.homeName {
-  line-height: 66px;
-  font-size: 80pt;
-  font-family: 'Lato';
-  font-weight: 400;
-}
-
-.homeTitle {
-  /* text-align: right; */
-  font-size: 30pt;
-  font-weight: 100;
-  padding-left: 7px;
-}
-
-.homeLinks {
-  color: white;
-  text-transform: lowercase;
-  text-align: left;
-  font-size: 50pt;
-  font-weight: 100;
-  line-height: 90px;
-}
-
-.navLink {
-  transition: all .3s
-}
-
-.navLink:hover {
-  background-color: #1a191e;
-  border-style: solid;
-  border-width: 0px 0px 10px 0px;
-  transition: all .3s
-}
-
-.homeLink {
-  padding-left: 15px;
-  padding-right: 50px;
-  text-decoration: none;
-  transition: all .3s
-}
-
-  .homeLink:hover {
-    background-color: #1a191e;
-    border-style: solid;
-    border-width: 0px 10px 0px 0px;
-    transition: all .3s
+  .material-icons {
+    font-size: 30px;
+    vertical-align: middle;
+    padding-right: 30px;
   }
 
-  .about:hover {
-    border-color: #d500ff;
-    color: #d500ff;
-  }
-
-  .education:hover {
-    border-color: #026eff;
-    color: #026eff;
-  }
-
-  .skills:hover {
-    border-color: #ff9f00;
-    color: #ff9f00;
-  }
-
-  .projects:hover {
-    border-color: #08ff02;
-    color: #08ff02;
-  }
-
-  .contact:hover {
-    border-color: #fcff02;
-    color: #fcff02;
+  .switch-wrapper {
+    position: relative;
   }
 
   /* NAVBAR STYLING */
-  .home:hover {
-    border-color: #d500ff;
+    .home:hover {
+      border-color: #d500ff;
+    }
+
+    .navLink.about:hover {
+      border-color: #d500ff;
+      color: white!important;
+    }
+
+    .navLink.skills:hover {
+      border-color: #ff9f00;
+      color: white!important;
+    }
+
+    .navLink.projects:hover {
+      border-color: #08ff02;
+      color: white!important;
+    }
+
+    .navLink.contact:hover {
+      border-color: #fcff02;
+      color: white!important;
+    }
+
+/* HOME PAGE STYLING */
+
+  .contactButtons {
+    padding-top: 10px;
+    transition: all .3s;
   }
 
-  .navLink.about:hover {
-    border-color: #d500ff;
-    color: white!important;
+  .contactButtons img:hover {
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+    /* box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3); */
+    transition: all .3s;
   }
 
-  .navLink.skills:hover {
-    border-color: #ff9f00;
-    color: white!important;
+  .circle.contact {
+    border: 0px!important;
   }
 
-  .navLink.projects:hover {
-    border-color: #08ff02;
-    color: white!important;
+  .brand-logo {
+    font-size: 36px!important;
+    font-weight: 200;
+    margin-left: 30px;
   }
 
-  .navLink.contact:hover {
-    border-color: #fcff02;
-    color: white!important;
+  .navLinksTest {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
   }
-  /* END NAVBAR STYLING */
 
-.material-icons {
-  font-size: 30px;
-  vertical-align: middle;
-  padding-right: 30px;
-}
+  .navLinksTest li {
+    float: left;
+    padding: 0px 15px 0px 15px;
+  }
 
-.switch-wrapper {
-  position: relative;
-}
+  .navLinks {
+    margin-right: 30px;
+  }
+
+  .titleDiv {
+    padding-left: 10%;
+    text-transform: lowercase;
+  }
+
+  .homeName {
+    line-height: 66px;
+    font-size: 80pt;
+    font-family: 'Lato';
+    font-weight: 400;
+  }
+
+  .homeTitle {
+    font-size: 30pt;
+    font-weight: 100;
+    padding-left: 7px;
+  }
+
+  .homeLinks {
+    color: white;
+    text-transform: lowercase;
+    text-align: left;
+    font-size: 50pt;
+    font-weight: 100;
+    line-height: 90px;
+  }
+
+  .navLink {
+    transition: all .3s
+  }
+
+  .navLink:hover {
+    background-color: #1a191e;
+    border-style: solid;
+    border-width: 0px 0px 10px 0px;
+    transition: all .3s
+  }
+
+  .homeLink {
+    padding-left: 15px;
+    padding-right: 50px;
+    text-decoration: none;
+    transition: all .3s
+  }
+
+    .homeLink:hover {
+      background-color: #1a191e;
+      border-style: solid;
+      border-width: 0px 10px 0px 0px;
+      transition: all .3s
+    }
+
+    .about:hover {
+      border-color: #d500ff;
+      color: #d500ff;
+    }
+
+    .education:hover {
+      border-color: #026eff;
+      color: #026eff;
+    }
+
+    .skills:hover {
+      border-color: #ff9f00;
+      color: #ff9f00;
+    }
+
+    .projects:hover {
+      border-color: #08ff02;
+      color: #08ff02;
+    }
+
+    .contact:hover {
+      border-color: #fcff02;
+      color: #fcff02;
+    }
 
 /* ABOUT PAGE STYLING */
-.aboutHeader {
-  text-transform: uppercase;
-  font-size: 97pt;
-  line-height: 90px;
-  font-weight: 600;
-  opacity: 0.5;
-  padding-bottom: 20px;
-}
+  .aboutHeader {
+    text-transform: uppercase;
+    font-size: 97pt;
+    line-height: 90px;
+    font-weight: 600;
+    opacity: 0.5;
+    padding-bottom: 20px;
+  }
 
-.aboutHeaderHover {
-  transition: all .5s;
-}
+  .aboutHeaderHover {
+    transition: all .5s;
+  }
 
-.aboutHeaderHover:hover {
-  color: #d500ff;
-  opacity: 1;
-  transition: all .5s;
-  cursor: default;
-}
+  .aboutHeaderHover:hover {
+    color: #d500ff;
+    opacity: 1;
+    transition: all .5s;
+    cursor: default;
+  }
 
-.headshot {
-  margin-top: 10%;
-}
+  .headshot {
+    margin-top: 10%;
+  }
 
-.circle.photo {
-  border: 5px solid #c1cad6;
-  width: 400px;
-  margin-left: 80px;
-}
+  .circle.photo {
+    border: 5px solid #c1cad6;
+    width: 400px;
+    margin-left: 80px;
+  }
 
-.aboutText {
-  text-align: left;
-  font-size: 32pt;
-  font-weight: 100;
-  line-height: 60px;
-  margin-top: 2%;
-  padding-left: 50px!important;
-  /* margin-top at 5 and line-height at 50px were original settings */
-}
+  .aboutText {
+    text-align: left;
+    font-size: 32pt;
+    font-weight: 100;
+    line-height: 60px;
+    margin-top: 2%;
+    padding-left: 50px!important;
+    /* margin-top at 5 and line-height at 50px were original settings */
+  }
 
-.littleText {
-  font-weight: 500;
-}
+  .littleText {
+    font-weight: 500;
+    transition: all .5s;
+  }
 
-.littleText:hover {
-  color: #fcff02!important;
-  transition: all .5s;
-}
+  .littleText:hover {
+    color: #fcff02!important;
+    transition: all .5s;
+  }
 
 /* SKILLS PAGE STYLING */
-.skillsHeader {
-  text-transform: uppercase;
-  font-size: 97pt;
-  line-height: 90px;
-  font-weight: 600;
-  opacity: 0.5;
-  transition: all .5s;
-  /* padding-bottom: 20px; */
-}
+  .skillsHeader {
+    text-transform: uppercase;
+    font-size: 97pt;
+    line-height: 90px;
+    font-weight: 600;
+    opacity: 0.5;
+    transition: all .5s;
+    /* padding-bottom: 20px; */
+  }
 
-.skillsHeader:hover {
-  color: #ff9f00;
-  opacity: 1;
-  transition: all .5s;
-  cursor: default;
-}
+  .skillsHeader:hover {
+    color: #ff9f00;
+    opacity: 1;
+    transition: all .5s;
+    cursor: default;
+  }
 
-.frontEndTitle, .backEndTitle {
-  font-weight: 500;
-  font-size: 80px;
-  text-transform: lowercase;
-  padding-bottom: 15px!important;
-}
+  .frontEndTitle, .backEndTitle {
+    font-weight: 500;
+    font-size: 80px;
+    text-transform: lowercase;
+    padding-bottom: 15px!important;
+  }
 
-.skillsText {
-  /* text-align: center; */
-  font-size: 32pt;
-  font-weight: 100;
-  line-height: 100px;
-  margin-top: 2%;
-  padding-left: 100px!important;
-  padding-right: 150px!important;
-}
+  .skillsText {
+    font-size: 32pt;
+    font-weight: 100;
+    line-height: 100px;
+    margin-top: 2%;
+    padding-left: 100px!important;
+    padding-right: 151px!important;
+  }
 
-.skillDiv {
-  padding: 15px;
-  border-style: solid;
-  border-width: 0px 0px 1px 0px;
-  transition: all .3s;
-  cursor: default;
-  /* margin-top: 5px; */
-  background: linear-gradient(to right, #ff9f00 50%, #212226 50%);
-  background-size: 200% 100%;
-  background-position:right bottom;
-}
+  .skillDiv {
+    padding: 15px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    transition: all .3s;
+    cursor: default;
+    /* margin-top: 5px; */
+    background: linear-gradient(to right, #ff9f00 50%, #212226 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+  }
 
-.skillDiv:hover {
-  background-position: left bottom;
-  /* background-color: #1a191e; */
-  transition: all .7s ease;
-}
+  .skillDiv:hover {
+    background-position: left bottom;
+    /* background-color: #1a191e; */
+    transition: all .7s ease;
+  }
 
 /* PROJECTS PAGE STYLING */
-.projectsHeader {
-  transition: all .5s;
-}
+  .projectsHeader {
+    transition: all .5s;
+  }
 
-.projectsHeader:hover {
-  color: #08ff02;
-  opacity: 1;
-  transition: all .5s;
-  cursor: default;
-}
+  .projectsHeader:hover {
+    color: #08ff02;
+    opacity: 1;
+    transition: all .5s;
+    cursor: default;
+  }
 
-.projectsTitle {
-  font-weight: 500;
-  font-size: 80px;
-  text-transform: lowercase;
-}
+  .projectsTitle {
+    font-weight: 500;
+    font-size: 80px;
+    text-transform: lowercase;
+  }
 
-.projectsText {
-  font-size: 24pt;
-  font-weight: 100;
-  padding-left: 100px!important;
-  padding-right: 100px!important;
-}
+  .projectsText {
+    font-size: 24pt;
+    font-weight: 100;
+    padding-left: 100px!important;
+    padding-right: 100px!important;
+  }
 
-.projectModalTrigger {
-  text-align: center;
-  font-weight: 600;
-  padding: 10px 0px 10px 0px!important;
-  transition: all .3s;
-}
+  .projectModalTrigger {
+    text-align: center;
+    font-weight: 600;
+    padding: 10px 0px 10px 0px!important;
+    transition: all .3s;
+  }
 
-.projectModalTrigger:hover {
-  background-color: #04b100;
-  cursor: pointer;
-  transition: all .3s;
-}
+  .projectModalTrigger:hover {
+    background-color: #04b100;
+    cursor: pointer;
+    transition: all .3s;
+  }
 
-.projectModal {
-  box-shadow: 0px 8px 23px 5px rgba(88, 105, 107, 0.35);
-  padding-top: 15px!important;
-  padding-bottom: 15px!important;
-  box-shadow: 0px 8px 23px 5px rgba(88, 105, 107, 0.35);
-  margin-bottom: 30px;
-}
+  .projectModal {
+    box-shadow: 0px 8px 23px 5px rgba(88, 105, 107, 0.35);
+    padding-top: 15px!important;
+    padding-bottom: 15px!important;
+    box-shadow: 0px 8px 23px 5px rgba(88, 105, 107, 0.35);
+    margin-bottom: 30px;
+  }
 
-.projectModalText ul {
-  font-size: 36px;
-  text-align: center;
-  padding: 10px 0px 0px 0px!important;
-  margin: 0px 0px 0px 0px!important;
-}
+  .projectModalText ul {
+    font-size: 36px;
+    text-align: center;
+    padding: 10px 0px 0px 0px!important;
+    margin: 0px 0px 0px 0px!important;
+  }
 
-.projectModalText li {
-  padding: 10px 0px 10px 0px!important;
-  margin: 0px 0px 5px 0px!important;
-  background-color: #057802!important;
-  transition: all .3s
-}
+  .projectModalText li {
+    padding: 10px 0px 10px 0px!important;
+    margin: 0px 0px 5px 0px!important;
+    background-color: #057802!important;
+    transition: all .3s
+  }
 
-.awards li:hover, .technologies li:hover {
-  background-color: #055a03!important;
-  transition: all .3s;
-  cursor: default;
-}
+  .awards li:hover, .technologies li:hover {
+    background-color: #055a03!important;
+    transition: all .3s;
+    cursor: default;
+  }
 
-.modal-content h4 {
-  font-size: 46px!important;
-  font-weight: 200!important;
-}
+  .modal-content h4 {
+    font-size: 46px!important;
+    font-weight: 200!important;
+  }
 
-.modal-footer button {
-  float: none!important;
-  font-size: 25px;
-  margin-bottom: 5px;
-  margin-top: 0px!important;
-}
+  .modal-footer button {
+    float: none!important;
+    font-size: 25px;
+    margin-bottom: 5px;
+    margin-top: 0px!important;
+  }
 
-.modal-footer {
-  background-color: #1a191e!important;
-}
+  .modal-footer {
+    background-color: #1a191e!important;
+  }
 
-.freecodecamp {
-  font-size: 46px;
-  font-weight: 400;
-}
+  .freecodecamp {
+    font-size: 46px;
+    font-weight: 400;
+    margin-top: 30px!important;
+  }
 
-.fccTechnology {
-  font-size: 32px;
-  font-weight: 100;
-}
+  .fccTechnology {
+    font-size: 32px;
+    font-weight: 100;
+  }
 
 /*  CONTACT PAGE STYLING */
 
-.contactHeader {
-  transition: all .5s;
-}
+  .contactHeader {
+    transition: all .5s;
+  }
 
-.contactHeader:hover {
-  color: #fcff02;
-  opacity: 1;
-  transition: all .5s;
-  cursor: default;
-}
+  .contactHeader:hover {
+    color: #fcff02;
+    opacity: 1;
+    transition: all .5s;
+    cursor: default;
+  }
 
-.contactTitle {
-  font-weight: 500;
-  font-size: 80px;
-  text-transform: lowercase;
-}
+  .contactTitle {
+    font-weight: 500;
+    font-size: 80px;
+    text-transform: lowercase;
+  }
 
-.contactText {
-  font-size: 65px;
-  font-weight: 100!important;
-  padding-left: 100px!important;
-  margin-top: 4%;
-  /* padding-right: 100px!important; */
-}
+  .contactText {
+    font-size: 65px;
+    font-weight: 100!important;
+    padding-left: 100px!important;
+    margin-top: 4%;
+    /* padding-right: 100px!important; */
+  }
 
 .contactLink {
   transition: all .3s;
