@@ -84,7 +84,8 @@ nav {
     transition: all .2s
   }
 
-  .about:hover, .home:hover {
+
+  .about:hover {
     border-color: #d500ff;
     color: #d500ff;
   }
@@ -105,9 +106,35 @@ nav {
   }
 
   .contact:hover {
-    color: #fcff02;
     border-color: #fcff02;
+    color: #fcff02;
   }
+
+  /* NAVBAR STYLING */
+  .home:hover {
+    border-color: #d500ff;
+  }
+
+  .navLink.education:hover {
+    border-color: #026eff;
+    color: white!important;
+  }
+
+  .navLink.skills:hover {
+    border-color: #ff9f00;
+    color: white!important;
+  }
+
+  .navLink.projects:hover {
+    border-color: #08ff02;
+    color: white!important;
+  }
+
+  .navLink.contact:hover {
+    border-color: #fcff02;
+    color: white!important;
+  }
+  /* END NAVBAR STYLING */
 
 .material-icons {
   font-size: 30px;
@@ -134,7 +161,9 @@ nav {
 }
 
 .circle {
-  /* border: 5px solid black; */
+  border: 5px solid #c1cad6;
+  width: 400px;
+  margin-left: 80px;
 }
 
 .aboutText {

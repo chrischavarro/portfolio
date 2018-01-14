@@ -6,15 +6,15 @@ import { Link } from 'react-router-dom'
 class About extends Component {
   render() {
     return (
-      <div className="row" style={{ }}>
+      <div className="row">
             <div className="aboutHeader">
               {"Who Am I?"}
               <ul className="right navLinksTest" style={{ fontSize: '24pt', textTransform: 'lowercase' }}>
-                <li className="navLink home"><Link to="/" style={{ color: 'white' }}>Home</Link></li>
-                <li className="navLink education"><Link to="/education" style={{ color: 'white' }}>Education</Link></li>
-                <li className="navLink skills"><Link to="/skills" style={{ color: 'white' }}>Skills</Link></li>
-                <li className="navLink projects"><Link to="/projects" style={{ color: 'white' }}>Projects</Link></li>
-                <li className="navLink contact"><Link to="/contact" style={{ color: 'white' }}>Contact</Link></li>
+                <Link to="/" style={{ color: 'white' }}><li className="navLink home">Home</li></Link>
+                <Link to="/education" style={{ color: 'white' }}><li className="navLink education">Education</li></Link>
+                <Link to="/skills" style={{ color: 'white' }}><li className="navLink skills">Skills</li></Link>
+                <Link to="/projects" style={{ color: 'white' }}><li className="navLink projects">Projects</li></Link>
+                <Link to="/contact" style={{ color: 'white' }}><li className="navLink contact">Contact</li></Link>
               </ul>
             </div>
             <div className="row">
@@ -25,7 +25,7 @@ class About extends Component {
               {"In my down time, I love powerlifting, performing stand-up comedy, and hunting down the best burritos in town."}
               </div>
               <div className="col s4 headshot">
-                <img src="https://image.ibb.co/fOc3X6/Headshot.jpg" className="circle z-depth-5" width="400px" style={{ marginLeft: '100px' }}/>
+                <img src="https://image.ibb.co/fOc3X6/Headshot.jpg" className="circle z-depth-5"/>
               </div>
             </div>
       </div>
