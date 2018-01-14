@@ -3,18 +3,11 @@ import Header from './components/Header';
 import Home from './components/Home'
 import About from './components/About';
 import Education from './components/Education';
+import Skills from './components/Skills';
 import { AnimatedSwitch, spring } from 'react-router-transition';
 import { BrowserRouter, Route } from 'react-router-dom';
-// import { Modal, Button, Card, CardTitle, Col, Row } from 'react-materialize'
 import './App.css';
-// #C1CAD6
-// #2B4162
-// #385F71
-// #F5F0F6
-// #D7B377
-// #8F754F
 
-// <Header />
 class App extends Component {
   render() {
     return (
@@ -28,6 +21,7 @@ class App extends Component {
           >
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
+            <Route exact path="/skills" component={Skills} />
             <Route exact path="/education" component={Education} />
           </AnimatedSwitch>
         </BrowserRouter>
