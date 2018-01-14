@@ -232,11 +232,15 @@ nav {
   transition: all .3s;
   cursor: default;
   /* margin-top: 5px; */
+  background: linear-gradient(to right, #ff9f00 50%, #212226 50%);
+  background-size: 200% 100%;
+  background-position:right bottom;
 }
 
 .skillDiv:hover {
-  background-color: #1a191e;
-  transition: all .3s
+  background-position: left bottom;
+  /* background-color: #1a191e; */
+  transition: all .7s ease;
 }
 
 @media (max-width: 1450px) {
