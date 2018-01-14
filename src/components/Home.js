@@ -18,11 +18,11 @@ class Header extends Component {
         </div>
         <div className="col s4 homeLinks valign-wrapper" style={{ minHeight: '100vh' }}>
             <ul>
-              <li className="homeLink about"><i className="material-icons">adjust</i><Link to="/about" style={{ color: 'white' }}>About Me</Link></li>
-              <li className="homeLink education"><i className="material-icons">adjust</i><Link to="/education" style={{ color: 'white' }}>Education</Link></li>
-              <li className="homeLink skills"><i className="material-icons">adjust</i><Link to="/skills" style={{ color: 'white' }}>Skills</Link></li>
-              <li className="homeLink projects"><i className="material-icons">adjust</i><Link to="/projects" style={{ color: 'white' }}>Projects</Link></li>
-              <li className="homeLink contact"><i className="material-icons">adjust</i><Link to="/contact" style={{ color: 'white' }}>Contact</Link></li>
+              <Link to="/about" style={{ color: 'white' }}><li className="homeLink about" style={{ color: 'white' }}><i className="material-icons">adjust</i>About Me</li></Link>
+              <Link to="/education" style={{ color: 'white' }}><li className="homeLink education" style={{ color: 'white' }}><i className="material-icons">adjust</i>Education</li></Link>
+              <Link to="/skills" style={{ color: 'white' }}><li className="homeLink skills" style={{ color: 'white' }}><i className="material-icons">adjust</i>Skills</li></Link>
+              <Link to="/projects" style={{ color: 'white' }}><li className="homeLink projects" style={{ color: 'white' }}><i className="material-icons">adjust</i>Projects</li></Link>
+              <Link to="/contact" style={{ color: 'white' }}><li className="homeLink contact" style={{ color: 'white' }}><i className="material-icons">adjust</i>Contact</li></Link>
             </ul>
         </div>
       </div>
