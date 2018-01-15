@@ -242,20 +242,20 @@ body, .nav-wrapper {
   .skillDiv {
     padding: 15px;
     border-style: solid;
-    border-width: 0px 0px 1px 0px;
+    border-width: 0px 0px 2px 0px;
+    border-color: #ff9f00;
     transition: all .3s;
     cursor: default;
     /* margin-top: 5px; */
-    background: linear-gradient(to right, #ff9f00 50%, #212226 50%);
+    /* background: linear-gradient(to right, #ff9f00 50%, #212226 50%);
     background-size: 200% 100%;
-    background-position:right bottom;
+    background-position:right bottom; */
   }
 
-  .skillDiv:hover {
+  /* .skillDiv:hover {
     background-position: left bottom;
-    /* background-color: #1a191e; */
     transition: all .7s ease;
-  }
+  } */
 
 /* PROJECTS PAGE STYLING */
   .projectsHeader {
@@ -273,6 +273,11 @@ body, .nav-wrapper {
     font-weight: 500;
     font-size: 80px;
     text-transform: lowercase;
+  }
+
+  .freecodecampTitle {
+    line-height: 70px!important;
+    margin-top: 25px!important;
   }
 
   .projectsText {
@@ -343,6 +348,7 @@ body, .nav-wrapper {
     font-size: 46px;
     font-weight: 400;
     margin-top: 30px!important;
+    margin-bottom: 0px!important;
   }
 
   .fccTechnology {
@@ -593,7 +599,7 @@ body, .nav-wrapper {
       background-color: red!important;
     }
 } */
-/* 
+/*
 @media screen
   and (min-device-width: 1200px)
   and (max-device-width: 1600px)

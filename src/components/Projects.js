@@ -59,7 +59,7 @@ class Projects extends Component {
                   </Modal>
               </div>
               <div className="col s6 projectsText">
-                <div className="projectsTitle freecodecampTitle">freecodecamp</div>
+                <div className="projectsTitle freecodecampTitle">freecodecamp <br/> projects</div>
                   <ul className="freecodecamp">
                     <li>
                       Pollr <br/>
