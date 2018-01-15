@@ -5,12 +5,6 @@ body, .nav-wrapper {
   font-family: 'Lato'!important;
 }
 
-nav {
-  -webkit-box-shadow: none!important;
-  -moz-box-shadow: none!important;
-  box-shadow: none!important;
-  margin-top: 30px!important;
-}
 /* GLOBAL STYLING */
 
   .material-icons {
@@ -58,7 +52,6 @@ nav {
 
   .contactButtons img:hover {
     box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
-    /* box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3); */
     transition: all .3s;
   }
 
@@ -84,12 +77,8 @@ nav {
     padding: 0px 15px 0px 15px;
   }
 
-  /* .navLinks {
-    margin-right: 30px;
-  } */
-
   .titleDiv {
-    padding-left: 10%;
+    margin-left: 10%;
     text-transform: lowercase;
   }
 
@@ -436,7 +425,7 @@ nav {
   }
 
   .titleDiv {
-    padding-left: 5%!important;
+    margin-left: 5%!important;
   }
 
   .homeName {
@@ -454,6 +443,7 @@ nav {
 
   .homeLinks ul {
     margin-top:25px!important;
+    padding-left: 5%!important;
   }
 
   /* CONTACT PAGE STYLING */
@@ -549,10 +539,6 @@ nav {
     margin: 20px 0px 20px 0px!important;
   }
 
-  /* .carousel {
-    display: none;
-  } */
-
   /* CONTACT PAGE STYLING */
   .contactHeader {
     font-size: 60pt!important;
@@ -572,5 +558,31 @@ nav {
     font-size: 50px!important;
     margin-bottom: 15px!important;
   }
+}
 
+/* @media (min-width: 1200px)
+  and (max-width: 1600px) {
+    .homeDiv {
+      background-color: red!important;
+    }
+} */
+
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .homeDiv {
+      background-color: blue!important;
+    }
+
+}
+
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+    .homeDiv {
+      background-color: yellow!important;
+    }
 }
