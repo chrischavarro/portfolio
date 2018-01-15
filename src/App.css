@@ -593,7 +593,7 @@ body, .nav-wrapper {
       background-color: red!important;
     }
 } */
-
+/* 
 @media screen
   and (min-device-width: 1200px)
   and (max-device-width: 1600px)
@@ -612,4 +612,4 @@ body, .nav-wrapper {
     .homeDiv {
       background-color: yellow!important;
     }
-}
+} */
