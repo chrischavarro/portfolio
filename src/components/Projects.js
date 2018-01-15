@@ -15,6 +15,7 @@ class Projects extends Component {
                 <Link to="/" style={{ color: 'white' }}><li className="navLink home">Home</li></Link>
                 <Link to="/about" style={{ color: 'white' }}><li className="navLink about">About</li></Link>
                 <Link to="/skills" style={{ color: 'white' }}><li className="navLink skills">Skills</li></Link>
+                <Link to="/projects" style={{ color: '#08ff02' }}><li className="navLink projects">Projects</li></Link>
                 <Link to="/contact" style={{ color: 'white' }}><li className="navLink contact">Contact</li></Link>
               </ul>
             </div>

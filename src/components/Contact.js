@@ -12,6 +12,7 @@ class Contact extends Component {
                 <Link to="/about" style={{ color: 'white' }}><li className="navLink about">About</li></Link>
                 <Link to="/skills" style={{ color: 'white' }}><li className="navLink skills">Skills</li></Link>
                 <Link to="/projects" style={{ color: 'white' }}><li className="navLink projects">Projects</li></Link>
+                <Link to="/contact" style={{ color: '#fcff02' }}><li className="navLink contact">Contact</li></Link>
               </ul>
             </div>
             <div className="row" style={{ marginBottom: '0px' }}>

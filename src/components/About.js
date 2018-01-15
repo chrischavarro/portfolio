@@ -10,6 +10,7 @@ class About extends Component {
               <span className="aboutHeaderHover">{"Who Am I?"}</span>
               <ul className="right navLinks about" style={{ fontSize: '24pt', textTransform: 'lowercase' }}>
                 <Link to="/" style={{ color: 'white' }}><li className="navLink home">Home</li></Link>
+                <Link to="/about" style={{ color: '#d500ff' }}><li className="navLink about">About</li></Link>
                 <Link to="/skills" style={{ color: 'white' }}><li className="navLink skills">Skills</li></Link>
                 <Link to="/projects" style={{ color: 'white' }}><li className="navLink projects">Projects</li></Link>
                 <Link to="/contact" style={{ color: 'white' }}><li className="navLink contact">Contact</li></Link>
