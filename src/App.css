@@ -422,8 +422,16 @@ body, .nav-wrapper {
     font-size: 16pt!important;
   }
 
+  .navLinks.projects {
+    float: none!important;
+    margin-left: 15px!important;
+
+  }
+
   .navLinks.skills {
     font-size: 15pt!important;
+    margin-left: 5px!important;
+    float: none!important;
   }
 
   .navLinks.contact {
