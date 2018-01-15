@@ -424,24 +424,13 @@ body, .nav-wrapper {
 }
 
 @media (max-width: 768px) {
-  .navLinks.projects, .navLinks.about {
-    font-size: 16pt!important;
+  .navLinks.projects, .navLinks.about, .navLinks.contact, .navLinks.skills {
+    font-size: 28pt!important;
   }
 
-  .navLinks.projects {
+  .navLinks.projects, .navLinks.skills {
     float: none!important;
-    margin-left: 15px!important;
-
-  }
-
-  .navLinks.skills {
-    font-size: 15pt!important;
-    margin-left: 5px!important;
-    float: none!important;
-  }
-
-  .navLinks.contact {
-    font-size: 17pt!important;
+    /* margin-left: 15px!important; */
   }
 
   .homeDiv {
