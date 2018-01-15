@@ -6,7 +6,7 @@ class About extends Component {
   render() {
     return (
       <div className="row" id="flex">
-            <div className="aboutHeader" id="a">
+            <div className="aboutHeader" id="header">
               <span className="aboutHeaderHover">{"Who Am I?"}</span>
               <ul className="right navLinks about" style={{ fontSize: '24pt', textTransform: 'lowercase' }}>
                 <Link to="/" style={{ color: 'white' }}><li className="navLink home">Home</li></Link>
@@ -17,13 +17,13 @@ class About extends Component {
               </ul>
             </div>
             <div className="row"  >
-              <div className="col s8 aboutText" id="b">
+              <div className="col s8 aboutText" id="biography">
                 {"I'm a Miami native turned Austinite and Growth Marketer turned Full-Stack Web Developer."}<br/><br/>
                 {"I have two years of startup experience, so I know how to get my hands dirty and obsess over the"} <span className="littleText">little details.</span><br/><br/>
                 {"I'm passionate about combining robust functionality with an elegant and engaging user experience."}<br/><br/>
                 {"In my down time, I love powerlifting, performing stand-up comedy, and hunting down the best burritos in town."}
               </div>
-              <div className="col s4 headshot" id="c">
+              <div className="col s4 headshot" id="photo">
                 <img src={Headshot} className="circle photo z-depth-5"/>
               </div>
             </div>

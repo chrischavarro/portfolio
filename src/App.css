@@ -506,9 +506,9 @@ body, .nav-wrapper {
     /* flex-shrink: 0!important; */
   }
 
-  #a { order: 1!important; }
-  #c { order: 2!important; }
-  #b { order: 3!important; }
+  /* div#header { order: 1; }
+  div#photo { order: 2; }
+  div#biography { order: 3; } */
 
   /* SKILLS PAGE STYLING */
 
