@@ -33,7 +33,7 @@ class Projects extends Component {
                     header='Technologies Used'
                     className="projectModal"
                     style={{ backgroundColor: '#1a191e', color: 'white', textAlign: 'center', width: '25%'}}
-                    trigger={<div className="col s6 projectModalTrigger">Technologies</div>}>
+                    trigger={<div className="col s4 projectModalTrigger">Technologies</div>}>
                     <div className="projectModalText technologies">
                       <ul>
                         <li>{"Node"}</li>
@@ -48,7 +48,7 @@ class Projects extends Component {
                     header='Ironhack Hack Show Awards'
                     className="projectModal"
                     style={{ backgroundColor: '#1a191e', color: 'white', textAlign: 'center', width: '25%'}}
-                    trigger={<div className="col s6 projectModalTrigger">Awards</div>}>
+                    trigger={<div className="col s4 projectModalTrigger">Awards</div>}>
                     <div className="projectModalText awards">
                       <ul>
                         <li>{"Most Innovative Idea"}</li>
@@ -57,6 +57,7 @@ class Projects extends Component {
                       </ul>
                     </div>
                   </Modal>
+                  <a href="https://small-victory-mern.herokuapp.com" style={{ color: 'white' }} target="_blank"><div className="col s4 projectModalTrigger">View Project</div></a>
               </div>
               <div className="col s6 projectsText">
                 <div className="projectsTitle freecodecampTitle">freecodecamp <br/> projects</div>
