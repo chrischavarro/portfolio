@@ -7,7 +7,7 @@ class Contact extends Component {
       <div style={{ minHeight: '100vh' }}>
             <div className="aboutHeader">
               <span className="contactHeader">{"Contact"}</span>
-              <ul className="right navLinks" style={{ fontSize: '24pt', textTransform: 'lowercase' }}>
+              <ul className="right navLinks contact" style={{ fontSize: '24pt', textTransform: 'lowercase' }}>
                 <Link to="/" style={{ color: 'white' }}><li className="navLink home">Home</li></Link>
                 <Link to="/about" style={{ color: 'white' }}><li className="navLink about">About</li></Link>
                 <Link to="/skills" style={{ color: 'white' }}><li className="navLink skills">Skills</li></Link>
