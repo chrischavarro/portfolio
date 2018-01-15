@@ -11,8 +11,8 @@ class Projects extends Component {
       <div className="">
             <div className="aboutHeader">
               <span className="projectsHeader">{"Projects"}</span>
-              <ul className="right navLinksTest" style={{ fontSize: '24pt', textTransform: 'lowercase' }}>
-                <Link to="/" style={{ color: 'white' }}><li className="navLink education">Home</li></Link>
+              <ul className="right navLinks" style={{ fontSize: '24pt', textTransform: 'lowercase' }}>
+                <Link to="/" style={{ color: 'white' }}><li className="navLink home">Home</li></Link>
                 <Link to="/about" style={{ color: 'white' }}><li className="navLink about">About</li></Link>
                 <Link to="/skills" style={{ color: 'white' }}><li className="navLink skills">Skills</li></Link>
                 <Link to="/contact" style={{ color: 'white' }}><li className="navLink contact">Contact</li></Link>
@@ -58,7 +58,7 @@ class Projects extends Component {
                   </Modal>
               </div>
               <div className="col s6 projectsText">
-                <div className="projectsTitle">freecodecamp</div>
+                <div className="projectsTitle freecodecampTitle">freecodecamp</div>
                   <ul className="freecodecamp">
                     <li>
                       Pollr <br/>

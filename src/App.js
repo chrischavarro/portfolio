@@ -4,20 +4,94 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
-import { AnimatedSwitch, spring } from 'react-router-transition';
+import { AnimatedRoute, AnimatedSwitch, spring } from 'react-router-transition';
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
+
+function mapStyles(styles) {
+  return {
+    opacity: styles.opacity,
+    transform: `scale(${styles.scale})`,
+  };
+}
+
+function bounce(val) {
+  return spring(val, {
+    stiffness: 330,
+    damping: 22,
+  });
+}
+
+// child matches will...
+const bounceTransition = {
+  // start in a transparent, upscaled state
+  atEnter: {
+    opacity: 0,
+    scale: 1.2,
+  },
+  // leave in a transparent, downscaled state
+  atLeave: {
+    opacity: bounce(0),
+    scale: bounce(0.8),
+  },
+  // and rest at an opaque, normally-scaled state
+  atActive: {
+    opacity: bounce(1),
+    scale: bounce(1),
+  },
+};
+
+function glide(val) {
+  return spring(val, {
+    stiffness: 174,
+    damping: 24,
+  });
+}
+
+function slide(val) {
+  return spring(val, {
+    stiffness: 125,
+    damping: 16,
+  });
+}
+
+const pageTransitions = {
+  atEnter: {
+    offset: 100
+  },
+  atLeave: {
+    offset: glide(100),
+  },
+  atActive: {
+    offset: glide(0),
+  },
+};
+
+const topBarTransitions = {
+  atEnter: {
+    offset: -100,
+  },
+  atLeave: {
+    offset: slide(-150),
+  },
+  atActive: {
+    offset: slide(0),
+  },
+};
+
 
 class App extends Component {
   render() {
     return (
       <div>
         <BrowserRouter>
+          <div>
           <AnimatedSwitch
-            atEnter={{ opacity: 0 }}
-            atLeave={{ opacity: 0 }}
-            atActive={{ opacity: 1 }}
-            className="switch-wrapper"
+            atEnter={bounceTransition.atEnter}
+            atLeave={bounceTransition.atLeave}
+            atActive={bounceTransition.atActive}
+            mapStyles={mapStyles}
+            className="route-wrapper"
           >
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
@@ -25,6 +99,7 @@ class App extends Component {
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/contact" component={Contact} />
           </AnimatedSwitch>
+          </div>
         </BrowserRouter>
       </div>
     );
@@ -33,54 +108,58 @@ class App extends Component {
 
 export default App;
 
-
-// <div style={{ position: 'relative', top: '110px' }}>
-//
-//   <Row>
-//     <Col s={4} className='grid-example' >
-//       <Card style={{ backgroundColor: '#2B4162' }} header={<CardTitle reveal image={"img/office.jpg"} waves='light' /> }
-//           title="About"
-//           reveal={<p>Im a Miami native looking to transition into a web development role after working in a tech start-up marketing role for the past two years</p>}>
-//       </Card>
-//     </Col>
-//     <Col s={4} className='grid-example'>
-//       <Card style={{ backgroundColor: '#385F71' }} header={<CardTitle reveal image={"img/office.jpg"} waves='light'/>}
-//           title="Education"
-//           reveal={<p>Here is some more information about this product that is only revealed once clicked on.</p>}>
-//       </Card>
-//     </Col>
-//     <Col s={4} className='grid-example'>
-//       <Card style={{ backgroundColor: '#F5F0F6' }} header={<CardTitle reveal image={"img/office.jpg"} waves='light'/>}
-//           title="Skills"
-//           reveal={<p>Here is some more information about this product that is only revealed once clicked on.</p>}>
-//       </Card>
-//     </Col>
-//   </Row>
-//   <Row>
-//     <Col s={6} className='grid-example'>
-//       <Card style={{ backgroundColor: '#D7B377' }} header={<CardTitle reveal image={"img/office.jpg"} waves='light'/>}
-//           title="Projects"
-//           reveal={
-//             <Modal
-//               header='Small Victory'
-//               trigger={<Button>Small Victory</Button>}>
-//               <p class="project_description">Gives users a daily five-minute task according to their selected track. Tracks are suggested based on user-selected interests during the signup process. The dashboard serves as a visual representation of user progress on a weekly, monthly, and yearly scale.</p>
-//
-//               <p class="project_description">Won the following awards at the October 2016 Ironhack Hack Show: <br/>
-//               Most Innovative Idea <br/>
-//               Best User Experience <br/>
-//               1st Place</p>
-//
-//             </Modal>
-//           }>
-//       </Card>
-//     </Col>
-//     <Col s={6} className='grid-example'>
-//       <Card style={{ backgroundColor: '#8F754F' }} header={<CardTitle reveal image={"img/office.jpg"} waves='light'/>}
-//           title="Contact"
-//           reveal={<p>Here is some more information about this product that is only revealed once clicked on.</p>}>
-//       </Card>
-//     </Col>
-//   </Row>
-//
-// </div>
+// <AnimatedRoute
+// exact path="/"
+// component={Home}
+// atEnter={ {offset: 100 }}
+// atLeave={ {offset: -100}}
+// atActive={ {offset: 0} }
+// mapStyles={(styles) => ({
+//   transform: `translateX(${styles.offset}%)`,
+// })}
+// className=""
+// />
+// <AnimatedRoute
+// exact path="/about"
+// component={About}
+// atEnter={ {offset: 100 }}
+// atLeave={ {offset: -100}}
+// atActive={ {offset: 0} }
+// mapStyles={(styles) => ({
+//   transform: `translateX(${styles.offset}%)`,
+// })}
+// className=""
+// />
+// <AnimatedRoute
+// exact path="/skills"
+// component={Skills}
+// atEnter={ {offset: 100 }}
+// atLeave={ {offset: -100}}
+// atActive={{offset: 0} }
+// className=""
+// mapStyles={(styles) => ({
+//   transform: `translateX(${styles.offset}%)`,
+// })}
+// />
+// <AnimatedRoute
+// exact path="/projects"
+// component={Projects}
+// atEnter={ bounceTransition.atEnter }
+// atLeave={ bounceTransition.atLeave }
+// atActive={ bounceTransition.atActive }
+// className=""
+// mapStyles={(styles) => ({
+//   transform: `translateX(${styles.offset}%)`,
+// })}
+// />
+// <AnimatedRoute
+// exact path="/contact"
+// component={Contact}
+// atEnter={ pageTransitions.atEnter }
+// atLeave={ pageTransitions.atLeave }
+// atActive={ pageTransitions.atActive }
+// className=""
+// mapStyles={(styles) => ({
+//   transform: `translateX(${styles.offset}%)`,
+// })}
+// />

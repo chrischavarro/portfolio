@@ -13,9 +13,9 @@ class Header extends Component {
   render() {
     return (
       <div className="row" style={{ padding: '0px', margin: '0', minHeight: '100vh', zIndex:1 }}>
-        <div className="col s8 valign-wrapper" style={{ minHeight: '100vh' }}>
+        <div className="col s8 valign-wrapper homeDiv" style={{ minHeight: '100vh' }}>
           <div className="titleDiv">
-            <div className="homeName">Christian Chavarro</div> <br/> 
+            <div className="homeName">Christian Chavarro</div> <br/>
             <div className="homeTitle">Full-Stack Javascript Developer</div>
             <div className="contactButtons">
               <a href="https://github.com/chrischavarro"><img src={Github} style={{ width: '75px' }} className="circle contact"/></a>

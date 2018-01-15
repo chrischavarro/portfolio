@@ -24,8 +24,9 @@ nav {
   }
 
   /* NAVBAR STYLING */
-    .home:hover {
-      border-color: #d500ff;
+    .navLink.home:hover {
+      border-color: #026eff;
+      color: white!important;
     }
 
     .navLink.about:hover {
@@ -71,21 +72,21 @@ nav {
     margin-left: 30px;
   }
 
-  .navLinksTest {
+  .navLinks {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
   }
 
-  .navLinksTest li {
+  .navLinks li {
     float: left;
     padding: 0px 15px 0px 15px;
   }
 
-  .navLinks {
+  /* .navLinks {
     margin-right: 30px;
-  }
+  } */
 
   .titleDiv {
     padding-left: 10%;
@@ -421,4 +422,148 @@ nav {
   .homeLink {
     padding-right: 40px!important;
   }
+}
+
+@media (max-width: 768px) {
+  .homeDiv {
+    width: 100%!important;
+    min-height: 0!important;
+    margin-top: 30px!important;
+  }
+
+  .titleDiv {
+    padding-left: 5%!important;
+  }
+
+  .homeName {
+    font-size: 60pt!important;
+  }
+
+  .homeTitle {
+    font-size: 28pt!important;
+  }
+
+  .homeLinks, .aboutText, .headshot {
+    width: 100%!important;
+    min-height: 0!important;
+  }
+
+  .homeLinks ul {
+    margin-top:25px!important;
+  }
+
+  /* CONTACT PAGE STYLING */
+  .aboutHeaderHover {
+    line-height: 99px!important;
+  }
+
+  .navLinks {
+    padding-top: 15px!important;
+    line-height: 50px!important;
+  }
+
+  .aboutText {
+    font-size: 18pt!important;
+    padding-left: 25px!important;
+    padding-right: 25px!important;
+    line-height: 40px!important;
+  }
+
+  .circle.photo {
+    margin-left: 10%!important;
+    width: 80%!important;
+  }
+
+  #flex {
+    display: flex;
+    /* Optional, if you want the DIVs 100% width: */
+    flex-direction: column!important;
+    /* flex-shrink: 0!important; */
+  }
+
+  #a { order: 1!important; }
+  #c { order: 2!important; }
+  #b { order: 3!important; }
+
+  /* SKILLS PAGE STYLING */
+
+  .skillsHeader {
+    font-size: 90pt!important;
+  }
+
+  .skillsText {
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+  }
+
+  .skillsText {
+    width: 100%!important;
+  }
+
+  .frontEndTitle, .backEndTitle {
+    font-size: 78px!important;
+  }
+
+  .projectsHeader {
+    font-size: 58pt!important;
+    /* font-size: 91pt!important; */
+  }
+
+  .projectsTitle {
+    line-height: 90px!important;
+  }
+
+  .freecodecampTitle {
+    font-size: 50px!important;
+  }
+
+  .projectsText {
+    width: 100%!important;
+    padding-left: 25px!important;
+    padding-right: 25px!important;
+  }
+
+  .projectModalTrigger {
+    width: 100%!important;
+  }
+
+  .modal.open {
+    width: 90%!important;
+  }
+
+  .modal.modal-content {
+    padding: 20px!important;
+  }
+
+  .projectModalText li {
+    padding: 5px 0px 5px 0px!important;
+  }
+
+  .freecodecamp {
+    line-height: 55px!important;
+  }
+
+  /* .carousel {
+    display: none;
+  } */
+
+  /* CONTACT PAGE STYLING */
+  .contactHeader {
+    font-size: 60pt!important;
+  }
+
+  .contactText {
+    padding-left: 25px!important;
+    padding-right: 25px!important;
+  }
+
+  .contactTitle {
+    font-size: 65px!important;
+  }
+
+  .contactText {
+      font-size: 50px!important;
+      margin-bottom: 15px!important;
+  }
+
 }

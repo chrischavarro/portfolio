@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { Modal } from 'react-materialize'
 
 class Contact extends Component {
   render() {
@@ -8,8 +7,8 @@ class Contact extends Component {
       <div style={{ minHeight: '100vh' }}>
             <div className="aboutHeader">
               <span className="contactHeader">{"Contact"}</span>
-              <ul className="right navLinksTest" style={{ fontSize: '24pt', textTransform: 'lowercase' }}>
-                <Link to="/" style={{ color: 'white' }}><li className="navLink education">Home</li></Link>
+              <ul className="right navLinks" style={{ fontSize: '24pt', textTransform: 'lowercase' }}>
+                <Link to="/" style={{ color: 'white' }}><li className="navLink home">Home</li></Link>
                 <Link to="/about" style={{ color: 'white' }}><li className="navLink about">About</li></Link>
                 <Link to="/skills" style={{ color: 'white' }}><li className="navLink skills">Skills</li></Link>
                 <Link to="/projects" style={{ color: 'white' }}><li className="navLink projects">Projects</li></Link>

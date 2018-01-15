@@ -7,8 +7,8 @@ class Skills extends Component {
       <div className="row">
             <div className="aboutHeader">
               <span className="skillsHeader">{"Skills"}</span>
-              <ul className="right navLinksTest" style={{ fontSize: '24pt', textTransform: 'lowercase' }}>
-                <Link to="/" style={{ color: 'white' }}><li className="navLink education">Home</li></Link>
+              <ul className="right navLinks" style={{ fontSize: '24pt', textTransform: 'lowercase' }}>
+                <Link to="/" style={{ color: 'white' }}><li className="navLink home">Home</li></Link>
                 <Link to="/about" style={{ color: 'white' }}><li className="navLink about">About</li></Link>
                 <Link to="/projects" style={{ color: 'white' }}><li className="navLink projects">Projects</li></Link>
                 <Link to="/contact" style={{ color: 'white' }}><li className="navLink contact">Contact</li></Link>
