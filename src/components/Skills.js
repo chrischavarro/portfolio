@@ -25,8 +25,8 @@ class Skills extends Component {
               </div>
               <div className="col s6 skillsText backend">
                 <div className="backEndTitle">Back-End</div>
-                  <div className="skillDiv">{"Node"}</div>
-                  <div className="skillDiv">{"Express"}</div>
+                  <div className="skillDiv">{"Node.js"}</div>
+                  <div className="skillDiv">{"Express.js"}</div>
                   <div className="skillDiv">{"MongoDB"}</div>
                   <div className="skillDiv">{"Heroku"}</div>
               </div>
