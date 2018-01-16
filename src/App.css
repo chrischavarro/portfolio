@@ -409,13 +409,14 @@ body, .nav-wrapper {
 }
 
 
+
 @media (max-width: 1450px) {
   body {
       font-weight: normal!important;
   }
 
   .homeLinks {
-    font-size: 30pt!important;
+    font-size: 36pt!important;
   }
 
   .homeLink {
