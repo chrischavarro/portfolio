@@ -21,7 +21,7 @@ class Projects extends Component {
             </div>
             <div className="row" style={{ marginBottom: '0px' }}>
               <div className="col s6 projectsText">
-                <div className="projectsTitle">small victory</div>
+                <div className="projectsTitle"><a href="https://github.com/chrischavarro/SmallVictory-JS" className="projectLink">small victory</a></div>
                   <Carousel options={{ fullWidth: true }} images={[
                     `${Pic1}`,
                     `${Pic2}`,
@@ -63,19 +63,19 @@ class Projects extends Component {
                 <div className="projectsTitle freecodecampTitle">freecodecamp <br/> projects</div>
                   <ul className="freecodecamp">
                     <li>
-                      Pollr <br/>
+                      <a href="https://github.com/chrischavarro/Pollr" class="projectLink">Pollr</a> <br/>
                       <span className="fccTechnology">{"React, Redux, Node, Express, MongoDB"}</span>
                     </li>
                     <li>
-                      Camper Leaderboard <br/>
+                      <a href="https://github.com/chrischavarro/CamperLeaderboard" class="projectLink">Camper Leaderboard</a> <br/>
                       <span className="fccTechnology">{"React, Redux"}</span>
                     </li>
                     <li>
-                      Recipe Box <br/>
+                      <a href="https://github.com/chrischavarro/RecipeBox" class="projectLink">Recipe Box</a> <br/>
                       <span className="fccTechnology">{"React, Redux"}</span>
                     </li>
                     <li>
-                    Markdown Previewer <br/>
+                    <a href="https://github.com/chrischavarro/MarkdownPreviewer" class="projectLink">Markdown Previewer</a> <br/>
                     <span className="fccTechnology">{"React"}</span>
                     </li>
                   </ul>

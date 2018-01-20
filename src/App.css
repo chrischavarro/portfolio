@@ -47,7 +47,7 @@ body, .nav-wrapper {
 
   .contactButtons {
     margin-top: 10px;
-    transition: all .3s;
+    transition: all .3s!important;
   }
 
   .contactButtons img:hover {
@@ -349,6 +349,16 @@ body, .nav-wrapper {
     font-weight: 400;
     margin-top: 30px!important;
     margin-bottom: 0px!important;
+  }
+
+  .projectLink {
+    color: white!important;
+    transition: all .3s;
+  }
+
+  .projectLink:hover {
+    color: #055a03!important;
+    transition: all .3s;
   }
 
   .fccTechnology {
