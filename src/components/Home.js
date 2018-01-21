@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import Github from '../images/github.svg';
 import Linkedin from '../images/linkedin.svg';
 import Gmail from '../images/gmail.png';
+import Medium from '../images/medium.png';
+import StackOverflow from '../images/stackoverflow.png';
 // #C1CAD6
 // #2B4162 used
 // #385F71 similar
@@ -21,6 +23,8 @@ class Header extends Component {
               <a href="https://github.com/chrischavarro"><img src={Github} style={{ width: '75px' }} className="circle contact"/></a>
               <a href="https://www.linkedin.com/in/christianchavarro/"><img src={Linkedin} style={{ width: '75px', marginLeft: '20px' }} className=" circle contact"/></a>
               <a href="mailto:chavarro.christian@gmail.com"><img src={Gmail} style={{ width: '75px', marginLeft: '20px' }} className=" circle contact"/></a>
+              <a href="https://medium.com/@christianchavarro"><img src={Medium} style={{ width: '75px', marginLeft: '20px' }} className=" circle contact"/></a>
+              <a href="https://stackoverflow.com/users/story/9245647"><img src={StackOverflow} style={{ width: '75px', marginLeft: '20px' }} className=" circle contact"/></a>
             </div>
           </div>
         </div>
