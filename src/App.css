@@ -7,10 +7,14 @@ body, .nav-wrapper {
 
 /* GLOBAL STYLING */
 
-  .particleWrapper {
+  .particleCanvas {
     display: block!important;
     position: fixed!important;
     z-index: -1!important;
+  }
+
+  .mobileParticleCanvas {
+    display: none!important
   }
 
   .material-icons {
@@ -441,10 +445,10 @@ body, .nav-wrapper {
 }
 
 @media (max-width: 768px) {
-  .particleCanvas {
+  /* .particleCanvas {
     display: none!important;
-  }
-  
+  } */
+
   .navLinks.projects, .navLinks.about, .navLinks.contact, .navLinks.skills {
     font-size: 28pt!important;
   }

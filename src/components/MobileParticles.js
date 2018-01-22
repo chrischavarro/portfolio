@@ -5,12 +5,12 @@ function ParticleBG() {
   return (
     <div>
       <Particles style={{ position: 'absolute' }}
-        className= "particleWrapper"
-        canvasClassName="particleCanvas"
+        className= "mobileParticleWrapper"
+        canvasClassName="mobileParticleCanvas"
         params={{
         particles: {
           number: {
-            value: 60
+            value: 20
           },
           opacity: {
             value: 1
