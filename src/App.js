@@ -4,6 +4,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import ParticleBG from './components/Particles';
 import { AnimatedRoute, AnimatedSwitch, spring } from 'react-router-transition';
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
@@ -84,6 +85,8 @@ class App extends Component {
   render() {
     return (
       <div>
+      <ParticleBG />
+
         <BrowserRouter>
           <div>
           <AnimatedSwitch

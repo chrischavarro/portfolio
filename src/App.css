@@ -7,6 +7,12 @@ body, .nav-wrapper {
 
 /* GLOBAL STYLING */
 
+  canvas {
+    display: block!important;
+    position: fixed!important;
+    z-index: -1!important;
+  }
+
   .material-icons {
     font-size: 30px;
     vertical-align: middle;

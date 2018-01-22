@@ -5,6 +5,7 @@ import Linkedin from '../images/linkedin.svg';
 import Gmail from '../images/gmail.png';
 import Medium from '../images/medium.png';
 import StackOverflow from '../images/stackoverflow.png';
+import ParticleBG from './Particles'
 // #C1CAD6
 // #2B4162 used
 // #385F71 similar
