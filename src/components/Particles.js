@@ -5,6 +5,8 @@ function ParticleBG() {
   return (
     <div>
       <Particles style={{ position: 'absolute' }}
+        className= "particleWrapper"
+        canvasClassName="particleCanvas"
         params={{
         particles: {
           number: {
@@ -35,10 +37,10 @@ function ParticleBG() {
           }
         }
         }}
-        // style={{
-        //   zDepth: -1,
-        //   backgroundColor: '#000'
-        // }}
+        style={{
+          // zDepth: -1,
+          backgroundColor: 'rgba(33, 34, 38, 1)'
+        }}
       />
     </div>
   )

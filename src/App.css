@@ -1,13 +1,13 @@
 body, .nav-wrapper {
   /* Light grey */
-  background-color: #212226!important;
+  background-color: rgba(33, 34, 38, 1)!important;
   color: white!important;
   font-family: 'Lato'!important;
 }
 
 /* GLOBAL STYLING */
 
-  canvas {
+  .particleWrapper {
     display: block!important;
     position: fixed!important;
     z-index: -1!important;
@@ -441,6 +441,10 @@ body, .nav-wrapper {
 }
 
 @media (max-width: 768px) {
+  .particleCanvas {
+    display: none!important;
+  }
+  
   .navLinks.projects, .navLinks.about, .navLinks.contact, .navLinks.skills {
     font-size: 28pt!important;
   }
