@@ -441,9 +441,9 @@ body, .nav-wrapper {
 }
 
 @media (max-width: 768px) {
-  /* .particleCanvas {
+  .particleCanvas {
     display: none!important;
-  } */
+  }
 
   .navLinks.projects, .navLinks.about, .navLinks.contact, .navLinks.skills {
     font-size: 28pt!important;
@@ -482,9 +482,18 @@ body, .nav-wrapper {
     margin-left: 20px!important;
   }
 
+  .mobilePush {
+    margin-left: 25px!important;
+  }
+
   .homeLinks ul {
-    margin-top: 10px!important;
-    margin-left: 40px!important;
+    /* margin-top: 10px!important;
+    margin-left: 40px!important; */
+    margin: auto;
+  }
+
+  .homeLink {
+    padding: 0px!important;
   }
 
   /* ABOUT PAGE STYLING */

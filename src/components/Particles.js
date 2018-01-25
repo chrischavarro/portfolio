@@ -1,7 +1,7 @@
 import React from 'react'
 import Particles from 'react-particles-js';
 
-function ParticleBG() {
+function ParticleBG(props) {
   return (
     <div>
       <Particles style={{ position: 'absolute' }}
@@ -10,7 +10,7 @@ function ParticleBG() {
         params={{
         particles: {
           number: {
-            value: 60
+            value: props.num
           },
           opacity: {
             value: 1

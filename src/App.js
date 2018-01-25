@@ -5,6 +5,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import ParticleBG from './components/Particles';
+import MobileParticles from './components/MobileParticles';
 import { AnimatedRoute, AnimatedSwitch, spring } from 'react-router-transition';
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
@@ -69,13 +70,45 @@ const pageTransitions = {
 };
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { width: 399 };
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
+
+  renderParticles() {
+    if (this.state.width < 400) {
+      var value = 20
+    } else {
+      var value = 60
+    }
+    console.log(value)
+    return <ParticleBG num={60} />
+
+    setTimeout(function() {
+      console.log('Return background')
+    }, 0
+    )
+  }
   render() {
     return (
       <div>
-
         <BrowserRouter>
           <div>
-          <ParticleBG />
+          {this.renderParticles()}
           <AnimatedSwitch
             atEnter={pageTransitions.atEnter}
             atLeave={pageTransitions.atLeave}

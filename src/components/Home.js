@@ -22,10 +22,10 @@ class Header extends Component {
             <div className="homeTitle">Full-Stack Javascript Developer</div>
             <div className="contactButtons">
               <a href="https://github.com/chrischavarro"><img src={Github} style={{ width: '75px' }} className="circle contact"/></a>
-              <a href="https://www.linkedin.com/in/christianchavarro/"><img src={Linkedin} style={{ width: '75px', marginLeft: '20px' }} className=" circle contact"/></a>
-              <a href="mailto:chavarro.christian@gmail.com"><img src={Gmail} style={{ width: '75px', marginLeft: '20px' }} className=" circle contact"/></a>
-              <a href="https://medium.com/@christianchavarro"><img src={Medium} style={{ width: '75px', marginLeft: '20px' }} className=" circle contact"/></a>
-              <a href="https://stackoverflow.com/users/story/9245647"><img src={StackOverflow} style={{ width: '75px', marginLeft: '20px' }} className=" circle contact"/></a>
+              <a href="https://www.linkedin.com/in/christianchavarro/"><img src={Linkedin} style={{ width: '75px', marginLeft: '20px' }} className="circle contact"/></a>
+              <a href="mailto:chavarro.christian@gmail.com"><img src={Gmail} style={{ width: '75px', marginLeft: '20px' }} className="circle contact"/></a>
+              <a href="https://medium.com/@christianchavarro" className="mobilePush"><img src={Medium} style={{ width: '75px', marginLeft: '20px' }} className="circle contact "/></a>
+              <a href="https://stackoverflow.com/users/story/9245647"><img src={StackOverflow} style={{ width: '75px', marginLeft: '20px' }} className="circle contact"/></a>
             </div>
           </div>
         </div>
