@@ -13,10 +13,6 @@ body, .nav-wrapper {
     z-index: -1!important;
   }
 
-  .mobileParticleCanvas {
-    display: none!important
-  }
-
   .material-icons {
     font-size: 30px;
     vertical-align: middle;
@@ -186,12 +182,12 @@ body, .nav-wrapper {
   }
 
   .headshot {
-    margin-top: 10%;
+    margin-top: 11%;
   }
 
   .circle.photo {
     border: 5px solid #c1cad6;
-    width: 400px;
+    width: 350px;
     margin-left: 80px;
   }
 
@@ -355,7 +351,7 @@ body, .nav-wrapper {
   }
 
   .freecodecamp {
-    font-size: 46px;
+    font-size: 36px;
     font-weight: 400;
     margin-top: 30px!important;
     margin-bottom: 0px!important;

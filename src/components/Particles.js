@@ -30,6 +30,11 @@ function ParticleBG() {
         },
         interactivity: {
           events: {
+            onresize: {
+              enable: true,
+              density_auto: true,
+              density_area: 10
+            },
             onhover: {
               enable: true,
               mode: "grab"

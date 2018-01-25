@@ -60,25 +60,29 @@ class Projects extends Component {
                   <a href="https://small-victory-mern.herokuapp.com" style={{ color: 'white' }} target="_blank"><div className="col s4 projectModalTrigger">View Project</div></a>
               </div>
               <div className="col s6 projectsText">
-                <div className="projectsTitle freecodecampTitle">freecodecamp <br/> projects</div>
+                <div className="projectsTitle freecodecampTitle">other projects</div>
                   <ul className="freecodecamp">
                     <li>
-                      <a href="https://github.com/chrischavarro/Pollr" class="projectLink">Pollr</a> <br/>
+                      <a href="https://github.com/chrischavarro/Pollr" className="projectLink">Pollr</a> <br/>
                       <span className="fccTechnology">{"React, Redux, Node, Express, MongoDB"}</span>
                     </li>
                     <li>
-                      <a href="https://github.com/chrischavarro/CamperLeaderboard" class="projectLink">Camper Leaderboard</a> <br/>
+                      <a href="https://github.com/chrischavarro/CamperLeaderboard" className="projectLink">Camper Leaderboard</a> <br/>
                       <span className="fccTechnology">{"React, Redux"}</span>
                     </li>
                     <li>
-                      <a href="https://github.com/chrischavarro/RecipeBox" class="projectLink">Recipe Box</a> <br/>
+                      <a href="https://github.com/chrischavarro/RecipeBox" className="projectLink">Recipe Box</a> <br/>
                       <span className="fccTechnology">{"React, Redux"}</span>
                     </li>
                     <li>
-                    <a href="https://github.com/chrischavarro/MarkdownPreviewer" class="projectLink">Markdown Previewer</a> <br/>
+                    <a href="https://github.com/chrischavarro/MarkdownPreviewer" className="projectLink">Markdown Previewer</a> <br/>
                     <span className="fccTechnology">{"React"}</span>
                     </li>
                   </ul>
+              </div>
+              <div className="col s6 projectsText">
+                <div className="projectsTitle ">Websites</div>
+                <a href="https://sigma-study.herokuapp.com" className="projectLink">Sigma Study</a>
               </div>
             </div>
       </div>
