@@ -44,7 +44,7 @@ const bounceTransition = {
 
 function glide(val) {
   return spring(val, {
-    stiffness: 174,
+    stiffness: 200,
     damping: 24,
   });
 }
@@ -68,32 +68,21 @@ const pageTransitions = {
   },
 };
 
-const topBarTransitions = {
-  atEnter: {
-    offset: -100,
-  },
-  atLeave: {
-    offset: slide(-150),
-  },
-  atActive: {
-    offset: slide(0),
-  },
-};
-
-
 class App extends Component {
   render() {
     return (
       <div>
-      <ParticleBG />
 
         <BrowserRouter>
           <div>
+          <ParticleBG />
           <AnimatedSwitch
-            atEnter={bounceTransition.atEnter}
-            atLeave={bounceTransition.atLeave}
-            atActive={bounceTransition.atActive}
-            mapStyles={mapStyles}
+            atEnter={pageTransitions.atEnter}
+            atLeave={pageTransitions.atLeave}
+            atActive={pageTransitions.atActive}
+            mapStyles={(styles) => ({
+              transform: `translateX(${styles.offset}%)`,
+            })}
             className="route-wrapper"
           >
             <Route exact path="/" component={Home} />
