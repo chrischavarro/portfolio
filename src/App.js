@@ -108,7 +108,6 @@ class App extends Component {
       <div>
         <BrowserRouter>
           <div>
-          {this.renderParticles()}
           <AnimatedSwitch
             atEnter={pageTransitions.atEnter}
             atLeave={pageTransitions.atLeave}
@@ -126,6 +125,7 @@ class App extends Component {
           </AnimatedSwitch>
           </div>
         </BrowserRouter>
+        {this.renderParticles()}
       </div>
     );
   }

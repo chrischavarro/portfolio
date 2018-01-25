@@ -441,7 +441,7 @@ body, .nav-wrapper {
 }
 
 @media (max-width: 768px) {
-  .particleCanvas {
+  .canvas {
     display: none!important;
   }
 
