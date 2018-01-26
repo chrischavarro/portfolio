@@ -106,6 +106,7 @@ class App extends Component {
   render() {
     return (
       <div>
+      {this.renderParticles()}
         <BrowserRouter>
           <div>
           <AnimatedSwitch
@@ -125,7 +126,6 @@ class App extends Component {
           </AnimatedSwitch>
           </div>
         </BrowserRouter>
-        {this.renderParticles()}
       </div>
     );
   }

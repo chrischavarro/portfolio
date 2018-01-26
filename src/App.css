@@ -440,10 +440,13 @@ body, .nav-wrapper {
   }
 }
 
-@media (max-width: 768px) {
-  .canvas {
+@media (max-width: 400px) {
+  .particleCanvas {
     display: none!important;
   }
+}
+
+@media (max-width: 768px) {
 
   .navLinks.projects, .navLinks.about, .navLinks.contact, .navLinks.skills {
     font-size: 28pt!important;
