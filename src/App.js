@@ -95,11 +95,11 @@ class App extends Component {
     } else {
       var value = 60
     }
-    console.log(value)
+    // console.log(value)
     return <ParticleBG num={60} />
 
     setTimeout(function() {
-      console.log('Return background')
+      // console.log('Return background')
     }, 0
     )
   }

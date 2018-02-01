@@ -440,11 +440,11 @@ body, .nav-wrapper {
   }
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   .particleCanvas {
     display: none!important;
   }
-}
+} */
 
 @media (max-width: 768px) {
 
