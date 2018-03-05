@@ -21,7 +21,7 @@ class Contact extends Component {
                   <div style={{ }}>
                     {"find me on"} <a href="https://www.linkedin.com/in/christianchavarro/" className="contactLink linkedin" style={{ color: 'white' }}>LinkedIn</a> <br/>
                     {"check out my"} <a href="https://github.com/chrischavarro" className="contactLink github" style={{ color: 'white' }}>GitHub</a> <br/>
-                    {"grab a copy of my"} <a href="https://www.dropbox.com/s/4h2cadwjdukqq9g/Christian%20Chavarro%20Resume.docx?dl=0" target="_blank" className="contactLink resume" style={{ color: 'white'}}>resume</a> <br/>
+                    {"grab a copy of my"} <a href="https://www.dropbox.com/s/dzknrvcnmqjj1ct/Christian%20Chavarro%20Resume.pdf?dl=0" target="_blank" className="contactLink resume" style={{ color: 'white'}}>resume</a> <br/>
                     {"or shoot me an"} <a href="mailto:chavarro.christian@gmail.com" className="contactLink email" style={{ color: 'white'}}>email</a> <br/>
                   </div>
               </div>
